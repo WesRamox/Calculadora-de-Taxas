@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&family=Roboto:wght@100;300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* border: solid red 1px; */
+}
+
+.container {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: rgb(16, 16, 16);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 580px;
+    height: 640px;
+    background-color: #171717;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.title {
+    font-size: 3em;
+    letter-spacing: 5px;
+    color: #e3e3e3;
+    margin-top: 20px;
+}
+
+input[type="number"] {
+    width: 50%;
+    height: 50px;
+    font-size: 30px;
+    padding: 5px;
+    -moz-appearance:textfield; /* Firefox */
+    margin: 0;
+    border: none;
+    background-color: #eeeeee;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#pagamentos {
+    width: 50%;
+    height: 50px;
+    font-size: 20px;
+    padding: 5px;
+    background-color: #eeeeee;
+}
+
+.boxValue {
+    gap: 3px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculateTotal {
+    width: 100%;
+    height: 50px;
+    font-size: 30px;
+    font-weight: 500;
+    background-color: #004593;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.calculateTotal:hover {
+    background: #2564C9;
+    transition: all 0.3s ease-in;
+    color: rgb(253, 253, 253);
+    cursor: pointer;
+}
+
+.calc {
+    margin: 5px;
+    transition: all 0.3s ease-in;
+    background: none;
+    color: rgb(255, 255, 255);
+    border-radius: 3px;
+    height: 50px;
+    /* width: 20%; */
+    border: none;
+    font-size: 40px;
+}
+
+.calc:hover {
+    background: none;
+    transition: all 0.3s ease-in;
+    color: rgb(189, 189, 189);
+    cursor: pointer;
+}
+
+.buttons {
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 3px;
+    width: 70%;
+}
+
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+
+.box-result {
+    width: 70%;
+}
+
+.box-result:hover {
+    cursor: default;
+}
+
+#result {
+    color: white;
+    margin: 10px auto 5px 2px;
+    font-size: 25px;
+}
+
+#priceResult {
+    color: rgb(171, 171, 171);
+}

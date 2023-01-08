@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Litz Store - Calculadora de Taxas</title>
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+    
+    <!-- font awesome - para icones -->
+    <script src="https://kit.fontawesome.com/87ae717b84.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1 class="title">Litz Store<span style="color: rgb(70, 123, 220)">.</span></h1>
+            <div class="boxValue">
+                <input type="number" id="productPrice" placeholder="Ex: 45,00">
+                    <select name="pagamentos" id="pagamentos">
+                        <option value="0.99">Debito</option>
+                        <option value="4.98">C. à Vista</option>
+                        <option value="7.51">Parcelado 2x</option>
+                        <option value="10.97">Parcelado 3x</option>
+                    </select>
+                </div>
+
+                <div class="buttons">
+                    <button class="calculateTotal" onclick="calculatePrice()">Calcular</button>
+                    <button class="calc plus" onclick="changeOperator()"><i id="icone" class="fa-solid fa-plus"></i></button>
+                </div>
+
+                <div class="box-result">
+                    <p id="result"><span id="priceResult"></span></p>
+                </div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
